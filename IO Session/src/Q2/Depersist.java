@@ -12,9 +12,7 @@ public class Depersist {
         ObjectInputStream in=new ObjectInputStream(new FileInputStream("file.txt"));
         Employee obj=(Employee) in.readObject();
         System.out.println("Object's state::");
-        System.out.println("Object's Id::"+obj.Id);
-        System.out.println("Object's Name::"+obj.Name);
-        System.out.println("Object's Profile::"+obj.Profile);
+
         in.close();
     }
 
